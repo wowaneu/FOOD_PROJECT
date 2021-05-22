@@ -1,0 +1,364 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+
+body{
+    font-family: Lato, sans-serif;
+}
+
+/* HEADER */
+
+#header{
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.22) 25%, rgba(0,0,0,0) 100%), url(./IMG/Tomatoes_Pasta.jpg);
+    background-size: cover;
+    height: 100vh;
+    max-height: 800px;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1200px;
+}
+
+#header .nav{
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .logo{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255, 99, 71, 0.741);
+    border-radius: 50%;
+}
+
+.nav .logo img{
+padding: 12px;
+}
+
+#header .nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+#header h3{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 100px;
+    font-size: 2rem;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+#header h1{
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+#header a{
+    display: inline-block;
+    margin: 20px 0 40px;
+    border: 2px solid white;
+    padding: 20px 80px;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#header h4{
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+#header h4 span{
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+#header h4 span:hover{
+    cursor: pointer;
+}
+
+
+/* INFO SECTION */
+
+#info{
+    padding: 80px 0;
+}
+
+#info .cards-box{
+    display: flex;
+    flex-basis: calc(100% / 3);
+    justify-content: center;
+    margin: 0 -20px;
+}
+
+#info .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+#info .card .img{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    line-height: 50px;
+}
+
+#info .card .img img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+#info .card .divider{
+    width: 60px;
+    height: 2px;
+    margin: 0 auto 10px;
+    background-color: tomato;
+}
+
+#info .card h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#info .card p{
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    color: #777;
+}
+
+#info::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #777;
+    width: 80%;
+    margin: 50px auto 0px;
+}
+
+/* APP SECTION */
+
+.app-container{
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 380px;
+}
+
+.app-container .mobile-container{
+    width: 35%;
+    min-width: 350px;
+    margin: 0 40px;
+    position: relative;
+    
+}
+
+.iphone{
+    position: absolute;
+    width: 300px;
+    height: 380px;
+    margin-left: 150px;
+    overflow: hidden;
+}
+
+.iphone img{
+    width: 300px;
+    
+
+}
+
+.iphone-screen{
+    position: relative;
+    top: 105px;
+    left: 193px;
+    height: 275px;
+    overflow: hidden;
+/*     display: none; */
+}
+
+.iphone-screen img{
+    width: 230px;
+
+
+}
+
+.introduce{
+    width: 65%;
+    margin-left: 200px;
+    min-width: 400px;
+}
+
+.introduce .divider{
+    width: 60px;
+    height: 2px;
+    margin: 10px 0;
+    background-color: tomato;
+}
+.introduce h3{
+    margin-top: 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.introduce p{
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    margin-bottom: 15px;
+    color: #777;
+}
+
+.buttons{
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
+.buttons:hover{
+    cursor: pointer;
+}
+.buttons img{
+    height: 30px;
+    margin-right: 6px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+/* COMMENTS SECTION */
+
+#comments{
+    margin: 0 auto;
+    padding-top: 50px;
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.22) 33%, rgba(0,0,0,0) 100%), url(./IMG/Tomatoes_Pasta.jpg);
+    background-size: cover;
+    background-position: bottom;
+    _background: no-repeat;
+    height: 340px;
+    
+}
+#comments .comment-container .avatar{
+    border: 3px solid rgb(89, 88, 88);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+   
+}
+
+#comments .comment-container .avatar img{
+    width: 170px;
+    position: relative;
+    left: -17px;
+}
+
+.text{
+    margin-top: 10px;
+    font-family: Lato, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.625);
+}
+
+.name{
+    margin-top: 10px;
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.625);
+}
+.dot{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin: 10px 10px;
+    background-color: rgb(114, 114, 114);
+}
+
+.dot:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+/* RECIPES SECTION */
+
+#recipes{
+    padding-top: 40px;
+}
+
+#recipes h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+#recipes .divider{
+    width: 80px;
+    height: 2px;
+    margin: 0 auto 40px;
+    background-color: tomato;
+}
+
+#recipes .card-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-r{
+    position: relative;
+    margin: 2px;
+    flex-basis: 200px;
+    margin-bottom: -2px;
+}
+
+.card-r img{
+    width: 100%;
+}
+
+#recipes .card-r h3{
+    position: absolute;
+    font-size: 2rem;
+    width: 100%;
+    top: 35%;
+    font-weight: 700;
+    color: white;
+}
+
+#recipes .card-r h3 span{
+    position: absolute;
+    display: block;
+    top: -20px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+}
