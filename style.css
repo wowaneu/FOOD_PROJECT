@@ -9,13 +9,14 @@ body{
 }
 
 /* HEADER */
+/* ALLES GUT schon */
 
 #header{
-    color: white;
+    color: grey;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.22) 25%, rgba(0,0,0,0) 100%), url(./IMG/Tomatoes_Pasta.jpg);
     background-size: cover;
-    height: 100vh;
-    max-height: 800px;
+    height: 99vh;
+    max-height: 811px;
 }
 
 .container{
